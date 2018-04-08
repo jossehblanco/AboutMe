@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">AcercaDe</string>
+    <string name="txt1">jossehblanco</string>
+    <string name="txt2">\@jossehblanco</string>
+    <string name="txt3">\@jossehblanco</string>
+    <string name="txt4">00355615\@uca.edu.sv</string>
+    <string name="txt5">Powered by JossehBlanco</string>
 </resources>
