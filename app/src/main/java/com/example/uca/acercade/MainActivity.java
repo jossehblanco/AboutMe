@@ -48,11 +48,11 @@ public class MainActivity extends AppCompatActivity {
         shareIntent.setAction(Intent.ACTION_SEND_MULTIPLE);
         shareIntent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, imageUris);
         shareIntent.putExtra(Intent.EXTRA_TEXT, "Sigueme en mis redes: \n"
-                + "Github: " + R.string.txt1 + "\n"
-                + "Twitter: " + R.string.txt2 + "\n"
-                + "Instagram: " + R.string.txt3 + "\n"
-                + "Gmail: " + R.string.txt4 + "\n"
-                + R.string.txt4 + ".");
+                + "Github: " + getString(R.string.txt1) + "\n"
+                + "Twitter: " + getString(R.string.txt2) + "\n"
+                + "Instagram: " + getString(R.string.txt3) + "\n"
+                + "Gmail: " + getString(R.string.txt4) + "\n"
+                + getString(R.string.txt5) + ".");
         shareIntent.setType("*/*");
         startActivity(Intent.createChooser(shareIntent, "Share images to.."));
     }
