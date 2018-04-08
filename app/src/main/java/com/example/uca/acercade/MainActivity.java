@@ -47,7 +47,12 @@ public class MainActivity extends AppCompatActivity {
         Intent shareIntent = new Intent();
         shareIntent.setAction(Intent.ACTION_SEND_MULTIPLE);
         shareIntent.putParcelableArrayListExtra(Intent.EXTRA_STREAM, imageUris);
-        shareIntent.putExtra(Intent.EXTRA_TEXT, "asdsadasj");
+        shareIntent.putExtra(Intent.EXTRA_TEXT, "Sigueme en mis redes: \n"
+                + "Github: " + R.string.txt1 + "\n"
+                + "Twitter: " + R.string.txt2 + "\n"
+                + "Instagram: " + R.string.txt3 + "\n"
+                + "Gmail: " + R.string.txt4 + "\n"
+                + R.string.txt4 + ".");
         shareIntent.setType("*/*");
         startActivity(Intent.createChooser(shareIntent, "Share images to.."));
     }
